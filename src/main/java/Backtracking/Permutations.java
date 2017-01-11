@@ -54,6 +54,8 @@ public class Permutations {
         }
     }
 
+    //TODO: Iterative solution
+    //TODO: swap solution
 
 
     public static void main(String args[]){
