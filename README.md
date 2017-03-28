@@ -4,5 +4,5 @@
 
 | Topics | Problems |
 | ------ | -------- |
-| Dynamic Programming | - CoinChange - Fibonnaci - MatrixPathCount |
+| Dynamic Programming | - CoinChange <br> - Fibonnaci <br> - MatrixPathCount |
 | Backtracking | - Permutations |
