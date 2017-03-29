@@ -1,8 +1,8 @@
-# AlgoPlayground
+# Algorithm Playground
 
-### Algorithm Playground Index
+### Index
 
 | Topics | Problems |
 | ------ | -------- |
-| Dynamic Programming | - CoinChange <br> - Fibonnaci <br> - MatrixPathCount |
+| Dynamic Programming | * CoinChange <br> * Fibonnaci <br> * MatrixPathCount <br> * BestTimeBuySellStock |
 | Backtracking | - Permutations |
