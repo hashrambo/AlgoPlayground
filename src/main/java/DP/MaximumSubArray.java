@@ -32,7 +32,7 @@ public class MaximumSubArray {
         int sum = nums[0];
         int max = nums[0];
 
-        for (int i=0; i<size; i++) {
+        for (int i=1; i<size; i++) { // comparison starts at the second element
             sum = Math.max(nums[i], sum + nums[i]);
             max = Math.max(max, sum);
         }
@@ -42,5 +42,12 @@ public class MaximumSubArray {
     public static void main (String [] args) {
         int [] nums = new int [] {-2, 1, -3, 4, -1, 2, 1, -5, 4}; //6
         System.out.println(maxSubArray(nums));
+
+        // edge cases
+        int [] nums2 = new int [] {1,2}; //3
+        System.out.println(maxSubArray(nums2));
+
+        int [] nums3 = new int [] {1}; //1
+        System.out.println(maxSubArray(nums3));
     }
 }
