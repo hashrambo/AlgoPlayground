@@ -30,6 +30,20 @@ public class MaximumProductSubArray {
         return max;
     }
 
+    /**
+     * The idea is to keep track of both max and min at each iteration and a global max.
+     * The purpose of doing this is to take account for the positive and negative
+     * contents in the array. In cases where negative numbers separated by positive number
+     * e.g. [-2, 3, -4]  When i=2, the min tracker from previous iteration, that is -6,
+     * would be able to multiplied by the negative current value -4, which returns the max 24.
+     * If min tracker is not available, the algorithm would think the max is 3, since it did not
+     * take account for the negative values, which when times negative become positve.
+     *
+     * Time Complexity: O(n)
+     * Space Complexity: O(n)
+     * @param nums
+     * @return
+     */
     public static int maxProduct2(int [] nums) {
         int size = nums.length;
 
